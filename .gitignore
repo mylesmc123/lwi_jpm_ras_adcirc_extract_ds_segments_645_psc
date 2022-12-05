@@ -1,3 +1,4 @@
 *.nc
 *.hdf
 util/__pycache__/*
+input.zip
