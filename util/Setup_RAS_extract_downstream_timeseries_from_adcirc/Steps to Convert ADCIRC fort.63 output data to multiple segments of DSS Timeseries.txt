@@ -1,0 +1,13 @@
+Convert ADCIRC fort.63 output data to a spatially averaged timeseries for each RAS Downstream Bondary Condition Segment in the format of DSS.
+
+Develop Coordinate Points list from RAS Model geometry using 4326 projection for each segment.
+	Export Geometry from RAS Mapper to .shp
+	Edit shp via qgis to re-project and produce point file via: 'Convert lines to Points'.
+	add coordinates to dbf, extract as csv.
+	use script: "C:\py\louisiana_real_time_forecasting\src\system\scripts\dev\RAS_BCPointsCSV_to_PointFiles.ipynb" to develop each point file.
+
+
+Get coldstart from fort.63 file.
+	units attr on time var.
+
+Loop through extractor for each point file.

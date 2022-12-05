@@ -1,0 +1,42 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true
+        },
+        {
+            "name": "Python: ras_input_extract_downstream_timeseries_from_adcirc.py",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            "justMyCode": true,
+            "args": [
+                "--adcirc_wse_file",
+                "C:\\py\\lwi_jpm_ras_adcirc_extract_ds_segments_645_psc\\input\\fort.63.nc",
+                "--point_file_dir",
+                "C:\\py\\lwi_jpm_ras_adcirc_extract_ds_segments_645_psc\\input\\pointFiles",
+                "--outdir",
+                "C:\\py\\lwi_jpm_ras_adcirc_extract_ds_segments_645_psc\\output",
+                "--format",
+                "hdf",
+                "--ras_start",
+                "27oct2022 1800",
+                "--ras_end",
+                "01nov2022 1800",
+                "--ras_hdf",
+                "C:\\py\\lwi_jpm_ras_adcirc_extract_ds_segments_645_psc\\input\\Amite_2022.p98.tmp.hdf",
+                "--sim_number",
+                "001"
+            ],
+        }
+    ]
+}
